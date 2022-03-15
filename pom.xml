@@ -17,7 +17,7 @@
 
     <groupId>rtx.spring</groupId>
     <artifactId>rtx-pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <name>rtx-pet-clinic</name>
     <description>RTX Pet Clinic Project</description>
