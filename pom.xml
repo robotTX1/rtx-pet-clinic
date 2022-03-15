@@ -17,7 +17,7 @@
 
     <groupId>rtx.spring</groupId>
     <artifactId>rtx-pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <name>rtx-pet-clinic</name>
     <description>RTX Pet Clinic Project</description>
@@ -58,7 +58,7 @@
     </build>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/springframeworkguru/sfg-pet-clinic.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/robotTX1/rtx-pet-clinic.git</developerConnection>
       <tag>rtx-pet-clinic-0.0.1</tag>
   </scm>
 
