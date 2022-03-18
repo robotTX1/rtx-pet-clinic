@@ -1,11 +1,12 @@
 package rtx.spring.rtxpetclinic.services.map;
 
 import rtx.spring.rtxpetclinic.model.Owner;
-import rtx.spring.rtxpetclinic.services.CrudService;
+import rtx.spring.rtxpetclinic.services.OwnerService;
 
+import java.util.Map;
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
@@ -29,5 +30,19 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public Owner findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        Owner owner = null;
+
+        for(Map.Entry<Long, Owner> entry : super.map.entrySet()) {
+            if(entry.getValue().getLastName().equals(lastName)) {
+                owner = entry.getValue();
+                break;
+            }
+        }
+
+        return owner;
     }
 }
