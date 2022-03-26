@@ -14,11 +14,13 @@
                     <th style="width: 150px;">Last Name</th>
                 </tr>
             </thead>
-            <tr th:each="owner : ${owners}">
+            <tbody>
+                <tr th:each="owner : ${owners}">
                 <td th:text="${owner.id}">123</td>
                 <td th:text="${owner.firstName}">Morgan</td>
                 <td th:text="${owner.lastName}">Freeman</td>
             </tr>
+            </tbody>
         </table>
     </body>
 </html>
